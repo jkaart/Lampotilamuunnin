@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: ghostwhite;
+}
+
+#virheBox {
+    display: none;
+    border: 2px solid red;
+    border-radius: 1vi;
+    padding: 2vh 2vw;
+    background-color: ghostwhite;
+}
+
+#virheBox h3 {
+    margin-bottom: 0.5vw;
+}
+#virheBox p {
+    margin-top: 0;
+}
+
+#lblLampotila {
+    display: flex;
+    flex-direction: column;
+}
+
+#desimaaliRadiot {
+    display: grid;
+}
+
+#desimaaliRadiot input,
+#desimaaliRadiot label {
+    display: inline-block;
+}
+
+#tulos {
+    font-weight: bold;
+}
+
+#inputLampotila {
+    width: 10ch;
+}
+
+.muunnin {
+    padding-top: 1vh;
+}
+
+.sisaltoVasen, .sisaltoOikea {
+    border: 1px solid black;
+    border-radius: 1vi;
+    background-color: aliceblue;
+}
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 4.5vw;
+    }
+
+    h3 {
+        font-size: 2.5vw;
+    }
+
+    #tulos {
+        font-size: 4.5vw;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    h1 {
+        font-size: 6.5vw;
+    }
+
+    h3 {
+        font-size: 4.5vw;
+    }
+
+    #tulos {
+        font-size: 5.5vw;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #tulos {
+        align-content: center;
+    }
+
+    #virheBox {
+        background-color: ivory;
+        margin-bottom: 1vh;
+    }
+
+    .keskitys {
+        padding: 1vi;
+    }
+
+    .sisaltoVasen {
+        margin-bottom: 2vh;
+    }
+
+    .sisaltoOikea h3 {
+        padding-right: 1vw;
+    }
+    .sisaltoVasen h3 {
+        margin-bottom: 0;
+     }
+
+    .sisaltoOikea h3, #tulos {
+        display: block;
+    }
+
+    .sisaltoVasen, .sisaltoOikea {
+        padding: 2vw 1vh;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #tulos {
+        text-align: center;
+        margin: auto;
+        font-size: 3.5vw;
+    }
+
+    .keskitys {
+        background-color: ivory;
+        border: 3px solid black;
+        border-radius: 1vi;
+        width: 50%;
+        margin: 2vh auto;
+        padding: 0 2vw 5vh 2vw;
+    }
+
+    .sisalto {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    .keskitys h1 {
+        text-align: center;
+    }
+
+    .sisaltoVasen,
+    .sisaltoOikea {
+        margin: 1vi;
+        padding: 1vi;
+    }
+
+    .sisaltoOikea {
+        display: none;
+        float: right;
+        text-align: center;
+    }
+
+    .sisaltoVasen {
+        float: left;
+    }
+
+    .sisaltoOikea h3 {
+        position: absolute;
+    }
+
+    .sisaltoVasen h3, .sisaltoOikea h3 {
+        margin: 0;
+        height: fit-content;
+    }
+}

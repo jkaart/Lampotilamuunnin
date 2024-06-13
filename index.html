@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <title>Lämpötilamuunnin</title>
+</head>
+
+<body>
+    <div class="keskitys">
+        <h1>Lämpötilamuunnin</h1>
+        <div id="virheBox">
+            <h3>Virhe</h3>
+            <p id="virheViesti"></p>
+        </div>
+        <div class="sisalto">
+            <div class="sisaltoVasen">
+                <h3>Muunnin:</h3>
+                <div class="muunnin">
+                    <select name="suunta" form="formMuunnin" id="slcSuunta">
+                        <option value="ctof">Celcius -> Fahrenheit</option>
+                        <option value="ctok">Celcius -> Kelvin</option>
+                        <option value="ftoc">Fahrenheit -> Celcius</option>
+                        <option value="ftok">Fahrenheit -> Kelvin</option>
+                        <option value="ktoc">Kelvin -> Celcius</option>
+                        <option value="ktof">Kelvin -> Fahrenheit</option>
+                    </select>
+                    <form id="formMuunnin">
+                        <label id="lblLampotila">Syötä lämpötila:</label>
+                        <input type="text" id="inputLampotila">
+                        <label id="yksikko">a</label>
+                        <input type="button" id="btnMuunna" value="Muunna">
+                        <div id="desimaaliRadiot">
+                            <label><input type="radio" value="1" id="radioDes1" name="desimaali" checked="checked">1
+                                desimaali</label>
+                            <label><input type="radio" value="2" id="radioDes2" name="desimaali">2 desimaali</label>
+                            <label><input type="radio" value="3" id="radioDes3" name="desimaali">3 desimaali</label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="sisaltoOikea">
+                <h3>Muunnos:</h3>
+
+                <div id="tulos">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
