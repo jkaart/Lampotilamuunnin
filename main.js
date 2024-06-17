@@ -1,3 +1,6 @@
+const slcSuunta = document.getElementById("slcSuunta");
+const btnMuunna = document.getElementById("btnMuunna");
+
 slcSuunta.addEventListener("change", etuYksikko);
 btnMuunna.addEventListener("click", muunna);
 
